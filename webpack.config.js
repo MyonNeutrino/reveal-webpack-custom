@@ -14,11 +14,6 @@ module.exports = {
         port: 9000
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: 'src/index.pug',
-            inject: false
-        }),
         new CopyWebpackPlugin([
             { from: 'public' },
         ]),
@@ -47,13 +42,6 @@ module.exports = {
                             outputPath: 'fonts/'
                         }
                     }
-                ]
-            },
-            {
-                test: /\.pug$/i,
-                use: [
-                    "html-loader",
-                    "pug-html-loader"
                 ]
             },
             {

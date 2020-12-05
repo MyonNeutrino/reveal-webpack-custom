@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My Presentation</title>
+  </head>
+  <body style="display: none">
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <!-- this is empty because-->
+          <!-- we don't want to show anything-->
+          <!-- until everyone is ready-->
+          <div data-hide-me-on-print></div>
+        </section>
+        <section data-center><span class="main-title-size">My Presentation</span>
+          <div class="main-title-placeholder-spacer"></div><span class="subtitle-subtle">Foo bar baz lorem ipsum</span>
+        </section>
+        <section>
+          <div class="main-title"><span class="main-title-text">My Presentation</span><span class="main-title-extra">Markdown with notes</span>
+          </div>
+          <div class="slide-container">
+            **My cool presentation**
+            _some italics_ *more italics*
+            ### h3
+            #### h4
+
+            ![picture](https://upload.wikimedia.org/wikipedia/commons/9/9d/Pilgrim_tercentenary_half_dollar_commemorative_obverse.jpg)\
+            [Link to Wikipedia](https://en.wikipedia.org)
+            <aside class="notes">
+              - Note 1
+              - Note 2
+
+              this and that
+              *IMPORTANT*
+              **EVEN MORE IMPORTANT**
+
+            </aside>
+          </div>
+        </section>
+        <section>
+          <div class="main-title"><span class="main-title-text">My Presentation</span><span class="main-title-extra">Markdown without notes</span>
+          </div>
+          <div class="slide-container">
+            - list
+              - right
+                - here
+            * for
+              * you
+
+            ```
+            code
+            ```
+
+            break\
+            into new line
+
+            here the backslash is not needed
+
+          </div>
+        </section>
+        <section>
+          <div class="main-title"><span class="main-title-text">My Presentation</span><span class="main-title-extra">List</span>
+          </div>
+          <div class="slide-container">
+            <ul>
+              <li>one</li>
+              <li>two</li>
+              <li>
+                thee
+                two
+                one
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="main-title"><span class="main-title-text">My Presentation</span><span class="main-title-extra">Pros and Cons</span>
+          </div>
+          <div class="slide-container">
+            <div class="flex-row stretch">
+              <div class="flex-col right-margin"><span class="fragment">Pros</span>
+                <div class="small-vspacer"></div>
+                <ul class="plus-list">
+                  <li>Meow</li>
+                  <li>Woof</li>
+                  <ul>
+                    <li>nice</li>
+                  </ul>
+                </ul>
+              </div>
+              <div class="flex-col"><span class="fragment">Cons</span>
+                <div class="small-vspacer"></div>
+                <ul class="minus-list">
+                  <li>this</li>
+                  <li>that</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-center>
+          <div data-hide-me-on-print></div><span class="main-title-size">My Presentation</span>
+          <div class="main-title-placeholder-spacer"></div><span class="subtitle-subtle">Thank you</span>
+        </section>
+        <section>
+          <h3>external Code</h3>
+          <pre><code data-sample="plugin/reveal-sampler/example/sample.c#3-7" data-sample-mark="3"></code></pre>
+        </section>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
