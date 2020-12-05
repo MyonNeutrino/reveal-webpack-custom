@@ -1,0 +1,21 @@
+version: '3'
+
+volumes:
+  data-db:
+
+services:
+  reveal:
+    build: .
+    image: reveal-build-container
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - VIRTUAL_HOST=presentation.docker.test
+      - VIRTUAL_PORT=80
+    expose:
+      - 80
+
+networks:
+  default:
+    external:
+      name: nginx-proxy

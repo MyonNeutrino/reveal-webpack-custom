@@ -11,7 +11,9 @@ module.exports = {
     devServer: {
         contentBase: path.resolve(__dirname, 'dist'),
         compress: true,
-        port: 9000
+	disableHostCheck: true,
+        port: 80,
+	host: '0.0.0.0'
     },
     plugins: [
         new CopyWebpackPlugin([
